@@ -7,6 +7,8 @@
       group="columns"
       ghost-class="ghost"
       draggable=".isDraggable"
+      :delay="200"
+      :delay-on-touch-only="true"
     >
       <div 
         class="cardColumm mr-3 isDraggable widthColumn"
@@ -25,6 +27,8 @@
             ghost-class="ghost"
             class="v-card__text minHeight scrollBar cardColummContent"
             :id="'idColumn' + column.id"
+            :delay="200"
+            :delay-on-touch-only="true"
           >
             <v-flex
               v-for="(card) in column.cards" 
