@@ -11,7 +11,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy:github": "node scripts/gh-pages-deploy.js"
   },
   "dependencies": {
     "core-js": "^3.3.2",
@@ -33,7 +34,8 @@
     "sass-loader": "^8.0.0",
     "vue-cli-plugin-vuetify": "^1.1.1",
     "vue-template-compiler": "^2.6.10",
-    "vuetify-loader": "^1.3.0"
+    "vuetify-loader": "^1.3.0",
+    "execa": "latest"
   },
   "eslintConfig": {
     "root": true,
